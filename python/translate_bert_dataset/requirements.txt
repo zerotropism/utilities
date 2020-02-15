@@ -1,0 +1,5 @@
+pip install fairseq
+pip install requests
+pip install sacremoses
+pip install subword-nmt
+pip install flask
