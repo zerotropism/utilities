@@ -1,0 +1,2 @@
+00:59:50,65 urllib3.connectionpool DEBUG Starting new HTTPS connection (1): dl.fbaipublicfiles.com:443
+00:59:50,867 urllib3.connectionpool DEBUG https://dl.fbaipublicfiles.com:443 "HEAD /fairseq/models/wmt14.en-fr.joined-dict.transformer.tar.bz2 HTTP/1.1" 200 0
