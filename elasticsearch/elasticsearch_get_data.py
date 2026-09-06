@@ -1,5 +1,6 @@
 import requests
 import argparse
+import os
 
 
 # getting user inputs
@@ -16,7 +17,7 @@ es_type = args.type
 keywords_list = args.keywords_list
 
 res = requests.get(
-    "https://ES_HOST_PLACEHOLDER/"
+    os.environ["ES_HOST"]
     + es_index
     + "/_search?q="
     + keywords_list

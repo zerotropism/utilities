@@ -1,5 +1,6 @@
 import requests
 import argparse
+import os
 
 
 # getting user inputs
@@ -12,7 +13,7 @@ es_index = args.index
 es_type = args.type
 
 res = requests.delete(
-    "https://ES_HOST_PLACEHOLDER/"
+    os.environ["ES_HOST"]
     + es_index
 )
 

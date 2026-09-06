@@ -1,8 +1,9 @@
 import requests
+import os
 
 
 res = requests.get(
-    "https://ES_HOST_PLACEHOLDER/_cat/indices?v"
+    os.environ["ES_HOST"]
 )
 print(res.status_code)
 if res.status_code != 200:

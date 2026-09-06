@@ -2,12 +2,6 @@ import requests
 import os
 import argparse
 import json
-import unidecode
-import re
-import csv
-import pandas as pd
-import string
-import spacy
 
 
 # getting user inputs
@@ -30,7 +24,7 @@ with os.scandir(args.data_dir) as files:
             with open(args.data_dir + "/" + file.name) as json_file:
                 data = json.load(json_file)
                 res = requests.post(
-                    "https://ES_HOST_PLACEHOLDER/"
+                    os.environ["ES_HOST"]
                     + es_index
                     + "/"
                     + es_type
