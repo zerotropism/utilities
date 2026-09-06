@@ -1,3 +1,5 @@
+> Archived in September 2026. Legacy project (2020), kept for reference. Not maintained, dependencies not updated.
+
 # Utilities
 
 Project to add all basic tools/scripts which can be used in all other projects
