@@ -1,5 +1,6 @@
 import requests
 import argparse
+import os
 
 
 # getting user inputs
@@ -12,7 +13,7 @@ es_index = args.index
 es_type = args.type
 
 res = requests.delete(
-    "https://search-target1-zrhgle3vemuqzhhs7fudth7cae.eu-west-3.es.amazonaws.com/"
+    os.environ["ES_HOST"]
     + es_index
 )
 

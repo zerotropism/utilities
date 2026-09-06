@@ -1,8 +1,9 @@
 import requests
+import os
 
 
 res = requests.get(
-    "https://search-target1-zrhgle3vemuqzhhs7fudth7cae.eu-west-3.es.amazonaws.com/_cat/indices?v"
+    os.environ["ES_HOST"]
 )
 print(res.status_code)
 if res.status_code != 200:
